@@ -1,30 +1,17 @@
 <template>
   <div id="app">
-  	<div @click="handleClick" class="dell">{{message}}</div>
-    <!--<router-view/>-->
+    <router-view></router-view>  <!--显示当前路由对应的组件-->
   </div>
 </template>
 
 <script>
 export default {
   name: 'App',
-  data () {
-  	return {
-  		message: 'HelloWorld'
-  	}
-  },
-  methods: {
-  	handleClick () {
-  		this.message = 'ByeByeWorld'
-  	}
-  }
 }
 </script>
 
 <style  scoped>
-	.dell {
-		color: red;
-	}
+	
 </style>
 
 
